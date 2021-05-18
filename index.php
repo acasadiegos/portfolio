@@ -20,12 +20,12 @@
 
 
     <!--  Magnific Popup css file  -->
-    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="./js/Magnific-Popup/dist/magnific-popup.css">
 
 
     <!--  Owl-carousel css file  -->
-    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./js/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./js/owl-carousel/css/owl.theme.default.min.css">
 
 
     <!--  custom css file  -->

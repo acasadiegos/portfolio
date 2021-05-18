@@ -120,7 +120,7 @@
 
         <!--  ========================= About Area ==========================  -->
 
-        <section class="about-area" id="about">
+        <section class="about-area" id="about_area">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
@@ -159,7 +159,7 @@
 
         <!--  ====================== Start Services Area =============================  -->
 
-        <section class="services-area" id="services">
+        <section class="services-area" id="services_area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center services-title">
@@ -375,7 +375,7 @@
 
         <!--  ======================= Project Area =============================  -->
 
-        <section class="project-area" id="projects">
+        <section class="project-area" id="projects_area">
             <div class="container">
                 <div class="project-title pb-5">
                     <h1 class="text-uppercase title-h1">Proyectos</h1>
@@ -569,7 +569,7 @@
         <!--  ======================= End Project Area =============================  -->
 
         <!--  ========================== Subscribe me Area ============================  -->
-        <section class="subscribe-us-area" id="subscribe">
+        <section class="subscribe-us-area" id="subscribe_area">
             <div class="container subscribe">
                 <div class="row">
                     <div class="col-lg-12 text-center subscribe-title">

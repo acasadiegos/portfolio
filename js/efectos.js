@@ -1,29 +1,42 @@
 $(document).ready(function(){
 
-// Scroll Elementos Menu
-	var acercaDe = $('#acerca-de').offset().top,
-		trabajos = $('#trabajos').offset().top,
-		contacto = $('#contacto').offset().top;
+    //Scroll de elemetnos del menu
+    var about  = $('#about').offset().top,
+        services = $('#services').offset().top,
+        projects = $('#projects').offset().top,
+        subscribe = $('#subscribe').offset().top;
 
-// Boton Acerca de
-	$('#btn-acercaDe').on('click', function(e){
-		e.preventDefault();
-		$('html, body').animate({
-			scrollTop: acercaDe - 40
-		});
-	});
+    //About button
+    $('#btn-about').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: about - 40
+        });
+    });
 
-	$('#btn-trabajos').on('click', function(e){
-		e.preventDefault();
-		$('html, body').animate({
-			scrollTop: trabajos - 40
-		});
-	});
+    //Services button
+    $('#btn-services').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: services - 40
+        });
+    });
 
-	$('#btn-contacto').on('click', function(e){
-		e.preventDefault();
-		$('html, body').animate({
-			scrollTop: contacto - 40
-		});
-	});
+    //Proyects button
+    $('#btn-proyects').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: projects - 40
+        });
+    });
+
+    //Subscribe button
+    $('#btn-subscribe').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: subscribe - 40
+        });
+    });
+
+    
 });

@@ -71,16 +71,16 @@
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="btn-about" href="#">Acerca de</a>
+                            <a class="nav-link" id="btn-about" href="#about_area">Acerca de</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="btn-services" href="#">Conocimientos</a>
+                            <a class="nav-link" id="btn-services" href="#services_area">Conocimientos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="btn-proyects" href="#">Proyectos</a>
+                            <a class="nav-link" id="btn-proyects" href="#projects_area">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="btn-subscribe" href="#">Contacto</a>
+                            <a class="nav-link" id="btn-subscribe" href="#subscribe_area">Contacto</a>
                         </li>
 
                     </ul>

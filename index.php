@@ -433,7 +433,7 @@
                                     <h4 class="text-uppercase">Larafoto</h4>
                                     <span class="text-secondary">Prototipo de red social de imagenes (tipo instagram). Permite 
                                         logearse, registrarse, gestionar imagenes propias y visualizar las de otros usuarios. Se pueden
-                                        buscar usuarios y también comentar en imagenes propias o de terceros.
+                                        buscar usuarios y también comentar en imagenes propias o de terceros. 
                                     </span>
                                 </div>
                             </div>

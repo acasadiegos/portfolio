@@ -71,16 +71,16 @@
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="btn-about" href="#about_area">Acerca de</a>
+                            <a class="nav-link" id="btn-about" href="#about_area">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="btn-services" href="#services_area">Conocimientos</a>
+                            <a class="nav-link" id="btn-services" href="#services_area">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="btn-proyects" href="#projects_area">Proyectos</a>
+                            <a class="nav-link" id="btn-proyects" href="#projects_area">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="btn-subscribe" href="#subscribe_area">Contacto</a>
+                            <a class="nav-link" id="btn-subscribe" href="#subscribe_area">Contact</a>
                         </li>
 
                     </ul>
@@ -101,12 +101,12 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12 site-title">
                         <h3 class="title-text">Hey</h3>
-                        <h1 class="title-text text-uppercase">Soy Andrés Casadiegos</h1>
-                        <h4 class="title-text text-uppercase">Ingeniero de sistemas</h4>
+                        <h1 class="title-text text-uppercase">I'm Andrés Casadiegos</h1>
+                        <h4 class="title-text text-uppercase">Systems Engineer</h4>
                         <div class="site-buttons">
                             <div class="d-flex flex-row flex-wrap">
                                 <a href="https://www.github.com/acasadiegos" type="button" class="btn button primary-button mr-4 text-uppercase">GITHUB</a>
-                                <a href="descargar.php?archivo=DiplomasCertificados.pdf" type="button" class="btn button secondary-button text-uppercase mr-4">DIPLOMAS / CERTIFICADOS</a>
+                                <a href="descargar.php?archivo=DiplomasCertificados.pdf" type="button" class="btn button secondary-button text-uppercase mr-4">DEGREES / CERTIFICATES</a>
                             </div>
                         </div>
                     </div>
@@ -130,22 +130,23 @@
                     </div>
                     <div class="col-lg-6 col-md-12 about-title">
                         <h2 class="text-uppercase pt-5">
-                            <span>Permíteme</span>
-                            <span>presentarme</span>
+                            <span>Let me</span>
+                            <span>introduce myself</span>
                         </h2>
                         <div class="paragraph py-4 w-75">
                             <p class="para">
-                                Profesional de ingeniería de sistemas, graduado de la Universidad Autónoma de Bucaramanga. 
-                                Con conocimientos y capacidades en el área de desarrollo web (backend y frontend), bases de datos, 
-                                desarrollo de videojuegos, dinámica de sistemas, análisis y documentación de requerimientos.
+                            Systems engineering professional with 2 years of experience, graduated from the Autonomous University of
+                             Bucaramanga. With experience, knowledge and skills working under the agile Scrum 
+                             methodology in the area of web development (backend and frontend), databases, analysis 
+                             and requirements documentation.
                             </p>
                             <p class="para">
-                                Soy un joven apasionado con la programación, responsable en las tareas asignadas, con un espiritú
-                                competitivo y de mejoraramiento continuo tanto personal como profesional, en busca de oportunidades en las
-                                cuales desarrollar todos mis conocimientos.
+                            I am a young man passionate about programming, responsible in the assigned tasks, with a competitive spirit 
+                            and continuous improvement, both personal and professional, looking for opportunities in which to develop all 
+                            my knowledge.
                             </p>
                         </div>
-                        <a href="descargar.php?archivo=cv.pdf" type="button" class="btn button primary-button text-uppercase">Descargar CV</a>
+                        <a href="descargar.php?archivo=cv.pdf" type="button" class="btn button primary-button text-uppercase">Download CV</a>
                     </div>
                 </div>
             </div>
@@ -165,7 +166,7 @@
                     <div class="col-lg-12 text-center services-title">
                         <h1 class="text-uppercase title-text">Conocimientos</h1>
                         <p class="para">
-                            Las siguientes son las tecnologías, lenguajes y herramientas que manejo.
+                            The following are the technologies, languages and tools that I use.
                         </p>
                     </div>
                 </div>
@@ -174,14 +175,67 @@
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="services">
                                 <div class="services-img text-center py-4">
+                                    <img src="./img/services/csharp.png" alt="Services-4">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">C#</h5>
+                                </div>
+                                <p class="card-text text-secondary">
+                                    C# programming language
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="services-img text-center py-4">
+                                    <img src="./img/services/NET.png" alt="Services-4">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">.Net</h5>
+                                </div>
+                                <p class="card-text text-secondary">
+                                    .Net Framework, .Net Core and .Net. Web APIs Development, MVC, Microservices, Clean Architecture.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="services-img text-center py-4">
+                                    <img src="./img/services/Oracle.jpg" alt="Services-4">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Oracle</h5>
+                                </div>
+                                <p class="card-text text-secondary">
+                                    Oracle databases, with knowledge of PL/SQL. Stored procedures, functions, jobs, etc.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="services-img text-center py-4">
+                                    <img src="./img/services/sql-server.png" alt="Services-4">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">SQL Server</h5>
+                                </div>
+                                <p class="card-text text-secondary">
+                                        SQL Server databases, with knowledge of Transact SQL. 
+                                        Stored procedures, functions, jobs, etc.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="services-img text-center py-4">
                                     <img src="./img/services/html.png" alt="Services-1">
                                 </div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">HTML</h5>
-                                    <p class="card-text text-secondary">
-                                        90%
-                                    </p>
                                 </div>
+                                <p class="card-text text-secondary">
+                                        HTML.
+                                </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -191,10 +245,10 @@
                                 </div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">CSS</h5>
-                                    <p class="card-text text-secondary">
-                                        70%
-                                    </p>
                                 </div>
+                                <p class="card-text text-secondary">
+                                        CSS.
+                                </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -204,10 +258,10 @@
                                 </div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">SASS</h5>
-                                    <p class="card-text text-secondary">
-                                        70%
-                                    </p>
                                 </div>
+                                <p class="card-text text-secondary">
+                                    SASS.
+                                </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -217,10 +271,10 @@
                                 </div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">Bootstrap</h5>
-                                    <p class="card-text text-secondary">
-                                        70%
-                                    </p>
                                 </div>
+                                <p class="card-text text-secondary">
+                                    Bootstrap.
+                                </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -230,23 +284,23 @@
                                 </div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">Javascript</h5>
-                                    <p class="card-text text-secondary">
-                                        65%
-                                    </p>
                                 </div>
+                                <p class="card-text text-secondary">
+                                    Javascript programming language.
+                                </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="services">
                                 <div class="services-img text-center py-4">
-                                    <img src="./img/services/jquery.png" alt="Services-4">
+                                    <img src="./img/services/Angular.png" alt="Services-4">
                                 </div>
                                 <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">Jquery</h5>
-                                    <p class="card-text text-secondary">
-                                        50%
-                                    </p>
+                                    <h5 class="card-title text-uppercase font-roboto">Angular</h5>
                                 </div>
+                                <p class="card-text text-secondary">
+                                    Angular Framework for Front-end web development.
+                                </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -256,10 +310,10 @@
                                 </div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">PHP</h5>
-                                    <p class="card-text text-secondary">
-                                        75%
-                                    </p>
                                 </div>
+                                <p class="card-text text-secondary">
+                                    PHP programming language.
+                                </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -269,75 +323,23 @@
                                 </div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">Laravel</h5>
-                                    <p class="card-text text-secondary">
-                                        80%
-                                    </p>
                                 </div>
+                                <p class="card-text text-secondary">
+                                    Laravel framework for MVC web development.
+                                </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="services">
                                 <div class="services-img text-center py-4">
-                                    <img src="./img/services/java.png" alt="Services-4">
+                                    <img src="./img/services/solid.png" alt="Services-4">
                                 </div>
                                 <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">Java</h5>
-                                    <p class="card-text text-secondary">
-                                        70%
-                                    </p>
+                                    <h5 class="card-title text-uppercase font-roboto">SOLID</h5>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="services-img text-center py-4">
-                                    <img src="./img/services/csharp.png" alt="Services-4">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">C#</h5>
-                                    <p class="card-text text-secondary">
-                                        60%
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="services-img text-center py-4">
-                                    <img src="./img/services/unity.png" alt="Services-4">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">Unity 2D</h5>
-                                    <p class="card-text text-secondary">
-                                        60%
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="services-img text-center py-4">
-                                    <img src="./img/services/postgresql.png" alt="Services-4">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">PostgreSQL</h5>
-                                    <p class="card-text text-secondary">
-                                        80%
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="services-img text-center py-4">
-                                    <img src="./img/services/mysql.png" alt="Services-4">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">MySQL</h5>
-                                    <p class="card-text text-secondary">
-                                        80%
-                                    </p>
-                                </div>
+                                <p class="card-text text-secondary">
+                                    SOLID principles for clean code development and good practices.
+                                </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -347,23 +349,10 @@
                                 </div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">GIT / GITHUB</h5>
-                                    <p class="card-text text-secondary">
-                                        80%
-                                    </p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="services-img text-center py-4">
-                                    <img src="./img/services/uml.png" alt="Services-4">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">Documentación de software</h5>
-                                    <p class="card-text text-secondary">
-                                        80%
-                                    </p>
-                                </div>
+                                <p class="card-text text-secondary">
+                                    Git.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -378,20 +367,238 @@
         <section class="project-area" id="projects_area">
             <div class="container">
                 <div class="project-title pb-5">
-                    <h1 class="text-uppercase title-h1">Proyectos</h1>
+                    <h1 class="text-uppercase title-h1">Projects</h1>
                 </div>
 
                 <div class="button-group">
-                    <button type="button" class="active" id="btn1" data-filter="*">Todos</button>
-                    <button type="button" data-filter=".practicas-profesionales">Praticas profesionales</button>
-                    <button type="button" data-filter=".tesis">Tesis</button>
-                    <button type="button" data-filter=".universidad">Proyectos universitarios</button>
-                    <button type="button" data-filter=".practica">Proyectos de práctica</button>
+                    <button type="button" class="active" id="btn1" data-filter="*">All</button>
+                    <button type="button" data-filter=".laboral">Job projects</button>
+                    <button type="button" data-filter=".personal">Personal Projects</button>
+                    <button type="button" data-filter=".practicas-profesionales">Internship</button>
                 </div>
 
                 <div class="container">
                     <div class="row grid">
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item practica">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item laboral">
+                            <div class="our-project">
+                                <div class="img">
+                                    <a class="test-popup-link" href="./img/portfolio/p4.jpg">
+                                        <img src="./img/portfolio/p4.jpg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">                                
+                                        <a href="https://transacciones.sodexhopass.com.co/CONDOR/Login.aspx?ReturnUrl=%2fcondor" target="_blank">
+                                            Billing Migration
+                                        </a>
+                                    </h4>
+                                    <span><b>Client: </b> Sodexo / Pluxee Colombia</span>
+                                    <br/>
+                                    <span><b>Technologies: </b>.Net Framework, Oracle PL/SQL</span>
+                                    <br/>
+                                    <br/>
+                                    <span class="text-secondary"><b>Descripción: </b>ERP change that involved developments on Condor, Sodexo's core card system, 
+                                    to consume services in Azure and build stored procedures in charge of migrating customer and affiliate invoices to the new ERP.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item laboral">
+                            <div class="our-project">
+                                <div class="img">
+                                    <a class="test-popup-link" href="./img/portfolio/p4.jpg">
+                                        <img src="./img/portfolio/p4.jpg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">                                
+                                        <a href="https://transacciones.sodexhopass.com.co/CONDOR/Login.aspx?ReturnUrl=%2fcondor" target="_blank">
+                                            Virtual Card
+                                        </a>
+                                    </h4>
+                                    <span><b>Client: </b> Sodexo / Pluxee Colombia</span>
+                                    <br/>
+                                    <span><b>Technologies: </b>.Net Framework, .NET 6.0, Oracle PL/SQL</span>
+                                    <br/>
+                                    <br/>
+                                    <span class="text-secondary"><b>Description: </b>Developments on Condor, Sodexo's core card system, and on the PaymentGateway microservice for activation of QR payments, 
+                                        to allow customers to request, load and manage virtual cards that are enrolled in their mobile device, to later be able to make payments via QR.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item laboral">
+                            <div class="our-project">
+                                <div class="img">
+                                    <a class="test-popup-link" href="./img/portfolio/p4.jpg">
+                                        <img src="./img/portfolio/p4.jpg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">                                
+                                        <a href="https://transacciones.sodexhopass.com.co/CONDOR/Login.aspx?ReturnUrl=%2fcondor" target="_blank">
+                                            Maintenance
+                                        </a>
+                                    </h4>
+                                    <span><b>Client: </b> Sodexo / Pluxee Colombia</span>
+                                    <br/>
+                                    <span><b>Technologies: </b>.Net Framework, Javascript, Typescript, Angular, CSS, Sass, Oracle PL/SQL</span>
+                                    <br/>
+                                    <br/>
+                                    <span class="text-secondary"><b>Description: </b>Maintenance work on Sodexo core systems such as: Front-end bug fixes, rest APIs, microservices and database procedures. 
+                                        Changes in the look and feel of the applications, improvements in source code to optimize processes and implement patterns for clean code.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item laboral">
+                            <div class="our-project">
+                                <div class="img">
+                                    <a class="test-popup-link" href="./img/portfolio/p4.jpg">
+                                        <img src="./img/portfolio/p4.jpg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">                                
+                                        <a href="https://transacciones.sodexhopass.com.co/CONDOR/Login.aspx?ReturnUrl=%2fcondor" target="_blank">
+                                            Delivery Tracking - Request and Generation of electronic guides
+                                        </a>
+                                    </h4>
+                                    <span><b>Client: </b> Sodexo / Pluxee Colombia</span>
+                                    <br/>
+                                    <span><b>Technologies: </b>.Net Framework, Azure Storage, Oracle PL/SQL</span>
+                                    <br/>
+                                    <br/>
+                                    <span class="text-secondary"><b>Description: </b>Implementation of functionality to request, obtain, store and present the guides for Sodexo card delivery 
+                                        packages in the Condor application, consuming web services exposed by delivery logistics operators.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item laboral">
+                            <div class="our-project">
+                                <div class="img">
+                                    <a class="test-popup-link" href="./img/portfolio/p4.jpg">
+                                        <img src="./img/portfolio/p4.jpg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">                                
+                                        <a href="https://transacciones.sodexhopass.com.co/CONDOR/Login.aspx?ReturnUrl=%2fcondor" target="_blank">
+                                            7Center - Implementation of multicontract option in state clients
+                                        </a>
+                                    </h4>
+                                    <span><b>Client: </b> Sodexo / Pluxee Colombia</span>
+                                    <br/>
+                                    <span><b>Technologies: </b>.Net Framework, Oracle PL/SQL</span>
+                                    <br/>
+                                    <br/>
+                                    <span class="text-secondary"><b>Description: </b>Project in the Condor application, with the objective of making adjustments throughout the system so that 
+                                    state clients can support the option of managing multiple contracts for the same card product.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item laboral">
+                            <div class="our-project">
+                                <div class="img">
+                                    <a class="test-popup-link" href="./img/portfolio/nexoz.png">
+                                        <img src="./img/portfolio/nexoz.png" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">                                
+                                        <a href="https://transacciones.sodexhopass.com.co/CalculadoraNexoz/Front/userAuthentication" target="_blank">
+                                            Nexoz - PSE Payment
+                                        </a>
+                                    </h4>
+                                    <span><b>Client: </b> Sodexo / Pluxee Colombia</span>
+                                    <br/>
+                                    <span><b>Technologies: </b>.Net 5.0, Javascript, Typescript, Angular, CSS, Sass, Oracle PL/SQL</span>
+                                    <br/>
+                                    <br/>
+                                    <span class="text-secondary"><b>Description: </b>Front-end and back-end developments to implement payment with PSE in Sodexo's Nexoz application, 
+                                        a platform where clients can request cash dispersions for their beneficiaries.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item laboral">
+                            <div class="our-project">
+                                <div class="img">
+                                    <a class="test-popup-link" href="./img/portfolio/nexoz.png">
+                                        <img src="./img/portfolio/nexoz.png" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">                                
+                                        <a href="https://transacciones.sodexhopass.com.co/CalculadoraNexoz/Front/userAuthentication" target="_blank">
+                                            Nexoz - Database normalization
+                                        </a>
+                                    </h4>
+                                    <span><b>Client: </b> Sodexo / Pluxee Colombia</span>
+                                    <br/>
+                                    <span><b>Technologies: </b>.Net 5.0, Oracle PL/SQL</span>
+                                    <br/>
+                                    <br/>
+                                    <span class="text-secondary"><b>Description: </b>Normalization of tables in the database of Sodexo's Nexoz application, under the guidelines of the technical 
+                                        leader of the project, to optimize queries and have a more decoupled and organized database model. Adjustments in the back-end of the application to adapt 
+                                        it according to the changes made in normalization.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item laboral">
+                            <div class="our-project">
+                                <div class="img">
+                                    <a class="test-popup-link" href="./img/portfolio/nexoz.png">
+                                        <img src="./img/portfolio/nexoz.png" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">                                
+                                        <a href="https://transacciones.sodexhopass.com.co/CalculadoraNexoz/Front/userAuthentication" target="_blank">
+                                            Nexoz - Rebranding
+                                        </a>
+                                    </h4>
+                                    <span><b>Client: </b> Sodexo / Pluxee Colombia</span>
+                                    <br/>
+                                    <span><b>Technologies: </b>Javascript, Typescript, Angular, CSS, Sass, Oracle PL/SQL</span>
+                                    <br/>
+                                    <br/>
+                                    <span class="text-secondary"><b>Description: </b>Change in the entire design/look and feel of the Front-End of the Nexoz application, 
+                                        in accordance with the guidelines of the brand change, or rebranding requested by Sodexo's parent company 
+                                        for its entire business.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item laboral">
+                            <div class="our-project">
+                                <div class="img">
+                                    <a class="test-popup-link" href="./img/portfolio/conexo.png">
+                                        <img src="./img/portfolio/conexo.png" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">                                
+                                        <a href="https://transacciones.sodexhopass.com.co/AFILIADOS/pages/login" target="_blank">
+                                            Conexo - Implementation of validations and messages
+                                        </a>
+                                    </h4>
+                                    <span><b>Client: </b> Sodexo / Pluxee Colombia</span>
+                                    <br/>
+                                    <span><b>Technologies: </b>Javascript, Typescript, Angular, CSS, Sass, .Net Framework, Oracle PL/SQL</span>
+                                    <br/>
+                                    <br/>
+                                    <span class="text-secondary"><b>Description: </b>Developments on the Conexo application, a voucher reading system for affiliate 
+                                        establishments. The development consisted of implementing new validations and restrictions for loading bonuses, 
+                                        and presenting on-screen messages and/or warnings according to these new validations.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item personal">
                             <div class="our-project">
                                 <div class="img">
                                     <a class="test-popup-link" href="./img/portfolio/p1.jpg">
@@ -399,30 +606,14 @@
                                     </a>
                                 </div>
                                 <div class="title py-4">
-                                    <h4 class="text-uppercase">Blog de videojuegos</h4>
-                                    <span class="text-secondary">Blog de videojuegos que permite loggearse, registrarse, crear
-                                        y ver entradas separadas por categorías.
+                                    <h4 class="text-uppercase">Videogames blog</h4>
+                                    <span class="text-secondary">Videogames blog that allows you to log in, register, 
+                                        create and view entries separated by categories.
                                     </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item practica">
-                            <div class="our-project">
-                                <div class="img">
-                                    <a class="test-popup-link" href="./img/portfolio/p2.jpg">
-                                        <img src="./img/portfolio/p2.jpg" alt="portfolio-2" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="title py-4">
-                                    <h4 class="text-uppercase">Tienda de camisetas</h4>
-                                    <span class="text-secondary">Mini ecommerce que permite logearse como administrador o cliente.
-                                        El administrador puede gestionar categorias y productos, mientras que los clientes pueden agregar
-                                        esos productos al carrito de compras y realizar un pedido.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item practica">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item personal">
                             <div class="our-project">
                                 <div class="img">
                                     <a class="test-popup-link" href="./img/portfolio/p3.jpg">
@@ -431,25 +622,9 @@
                                 </div>
                                 <div class="title py-4">
                                     <h4 class="text-uppercase">Larafoto</h4>
-                                    <span class="text-secondary">Prototipo de red social de imagenes (tipo instagram). Permite 
-                                        logearse, registrarse, gestionar imagenes propias y visualizar las de otros usuarios. Se pueden
-                                        buscar usuarios y también comentar en imagenes propias o de terceros. 
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item universidad">
-                            <div class="our-project">
-                                <div class="img">
-                                    <a class="test-popup-link" href="./img/portfolio/p4.jpg">
-                                        <img src="./img/portfolio/p4.jpg" alt="portfolio-4" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="title py-4">
-                                    <h4 class="text-uppercase">Portals Wonderland</h4>
-                                    <span class="text-secondary">Videojuego 2D uno contra uno, donde dos astronautas pelean
-                                        con una pistola de portales, abriendo estratégicamente portales en el mapa para que su 
-                                        contrincante caiga en algunas de las trampas.
+                                    <span class="text-secondary">Prototype of social image network (Instagram type). 
+                                        It allows you to log in, register, manage your own images and view those of other users. 
+                                        You can search for users and also comment on your own or third-party images.
                                     </span>
                                 </div>
                             </div>
@@ -463,46 +638,14 @@
                                 </div>
                                 <div class="title py-4">
                                     <h4 class="text-uppercase">e-Mailing</h4>
-                                    <span class="text-secondary">Sistema de marketing para el envío de correos masivos 
-                                        a contactos suscritos a diferencias audiencias. El sistema web también muestra
-                                        estadísticas de las campañas creadas y cómo los usuarios pertenecientes a 
-                                        una audiencia, interactuan con los mails.
+                                    <span class="text-secondary">Marketing system for sending mass emails to contacts subscribed to different audiences. 
+                                        The web system also shows statistics of the campaigns created and how users belonging 
+                                        to an audience interact with the emails.
                                     </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item tesis">
-                            <div class="our-project">
-                                <div class="img">
-                                    <a class="test-popup-link" href="./img/portfolio/p6.jpg">
-                                        <img src="./img/portfolio/p6.jpg" alt="portfolio-6" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="title py-4">
-                                    <h4 class="text-uppercase">CC Experience</h4>
-                                    <span class="text-secondary">Prototipo de videojuego serio basado en modelos de 
-                                        dinámica de sistemas para la simulación de politicas que impacten en el 
-                                        cambio climático.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item universidad">
-                            <div class="our-project">
-                                <div class="img">
-                                    <a class="test-popup-link" href="./img/portfolio/p7.jpg">
-                                        <img src="./img/portfolio/p7.jpg" alt="portfolio-7" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="title py-4">
-                                    <h4 class="text-uppercase">1v1 Game</h4>
-                                    <span class="text-secondary">Mi primer videojuego de plataformas. El objetivo es conseguir suficientes monedas
-                                        para derribar el muro, obtener la calavera y matar al contrincante que está del otro lado.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item practica">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item personal">
                             <div class="our-project">
                                 <div class="img">
                                     <a class="test-popup-link" href="./img/portfolio/p8.jpg">
@@ -510,12 +653,12 @@
                                     </a>
                                 </div>
                                 <div class="title py-4">
-                                    <h4 class="text-uppercase">Portafolio v1</h4>
-                                    <span class="text-secondary">Primera versión de mi portafolio profesional.</span>
+                                    <h4 class="text-uppercase">Portfolio v1</h4>
+                                    <span class="text-secondary">First version of my professional portfolio.</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item practica">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item personal">
                             <div class="our-project">
                                 <div class="img">
                                     <a class="test-popup-link" href="./img/portfolio/p9.jpg">
@@ -525,12 +668,12 @@
                                     </a>
                                 </div>
                                 <div class="title py-4">
-                                    <h4 class="text-uppercase">Plantilla de un café</h4>
-                                    <span class="text-secondary">Landing page, plantilla para un café/restaurante. </span>
+                                    <h4 class="text-uppercase">Cafe template</h4>
+                                    <span class="text-secondary">Landing page, template for a cafe/restaurant. </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item practica">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item personal">
                             <div class="our-project">
                                 <div class="img">
                                     <a class="test-popup-link" href="./img/portfolio/p10.jpg">
@@ -540,12 +683,12 @@
                                     </a>
                                 </div>
                                 <div class="title py-4">
-                                    <h4 class="text-uppercase">Plantilla para una Startup</h4>
-                                    <span class="text-secondary">Landing page, plantilla para una startup. </span>
+                                    <h4 class="text-uppercase">Template for a startup</h4>
+                                    <span class="text-secondary">Landing page, template for a startup. </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item practica">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item personal">
                             <div class="our-project">
                                 <div class="img">
                                     <a class="test-popup-link" href="./img/portfolio/p11.jpg">
@@ -556,8 +699,8 @@
                                 </div>
                                 <div class="title py-4">
                                     <h4 class="text-uppercase">Easybank Landing Page</h4>
-                                    <span class="text-secondary">Reto propuesto por el sitio web Codementor, 
-                                        elaborar una landing page responsive para un banco. </span>
+                                    <span class="text-secondary">Challenge proposed by the Codementor website, create a responsive landing 
+                                        page for a bank.</span>
                                 </div>
                             </div>
                         </div>
@@ -585,15 +728,15 @@
                         </div>
                         <div class="col-sm-12 col-lg-6 mb-5 input-textbox">
                             <div class="d-flex justify-content-center">
-                                <input type="text" id="txtnombre" name="nombre" class="form-control" placeholder="Nombre" required minlength="3" maxlength="50" pattern="[A-Za-z]+">
+                                <input type="text" id="txtnombre" name="nombre" class="form-control" placeholder="Name" required minlength="3" maxlength="50" pattern="[A-Za-z]+">
                             </div>
                         </div>
                         <div class="col-sm-12 mb-5 input-textbox">
-                            <textarea type="text" id="txtmensaje" name="mensaje" class="form-control" placeholder="Mensaje" required></textarea>
+                            <textarea type="text" id="txtmensaje" name="mensaje" class="form-control" placeholder="Message" required></textarea>
                         </div>
                         <div class="col-sm-12">
                             <div class="btn-submit d-flex justify-content-center">
-                                <button type="submit" class="btn btn-success">Enviar</button>
+                                <button type="submit" class="btn btn-success">Send</button>
                             </div>
                         </div>
                     </div>
@@ -610,9 +753,8 @@
         <div class="container">
             <div class="">
                 <div class="social text-center">
-                    <h5 class="text-uppercase">Mis redes</h5>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <h5 class="text-uppercase">My social media</h5>
+                    <a href="https://www.linkedin.com/in/andrés-eduardo-casadiegos-gómez-b579501b8/"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>

@@ -71,7 +71,7 @@ if(isset($_POST)){
 
             $mail->send();
             
-            $_SESSION['completado'] = 'El mensaje se ha enviado con éxito';
+            $_SESSION['completado'] = 'Email sended sucessfully';
             
         } catch (Exception $e) {
             $SESSION['errores']['general'] = 'Ha ocurrido un error al enviar el e-mail';

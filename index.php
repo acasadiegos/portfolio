@@ -164,7 +164,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center services-title">
-                        <h1 class="text-uppercase title-text">Conocimientos</h1>
+                        <h1 class="text-uppercase title-text">KNOWLEDGE</h1>
                         <p class="para">
                             The following are the technologies, languages and tools that I use.
                         </p>
@@ -716,7 +716,7 @@
             <div class="container subscribe">
                 <div class="row">
                     <div class="col-lg-12 text-center subscribe-title">
-                        <h4 class="text-uppercase">CONTACTAME</h4>
+                        <h4 class="text-uppercase">CONTACT ME</h4>
                     </div>
                 </div>
                 <form class="formulario" action="enviarMail.php" method="POST">

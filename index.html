@@ -1,5 +1,3 @@
-<?php require_once 'session.php'; ?>
-<?php require_once 'helpers.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,15 +16,12 @@
     <!--  font awesome icons  -->
     <link rel="stylesheet" href="./css/all.min.css">
 
-
     <!--  Magnific Popup css file  -->
     <link rel="stylesheet" href="./js/Magnific-Popup/dist/magnific-popup.css">
-
 
     <!--  Owl-carousel css file  -->
     <link rel="stylesheet" href="./js/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./js/owl-carousel/css/owl.theme.default.min.css">
-
 
     <!--  custom css file  -->
     <link rel="stylesheet" href="./css/style.css">
@@ -34,29 +29,59 @@
     <!--  Responsive css file  -->
     <link rel="stylesheet" href="./css/responsive.css">
 
+    <style>
+        /* Alert styles */
+        .alerta {
+            padding: 15px;
+            margin: 20px;
+            border-radius: 5px;
+            text-align: center;
+            animation: slideDown 0.5s ease-out;
+        }
+
+        .alerta-exito {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .alerta-error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .alert-container {
+            position: fixed;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9999;
+            width: 90%;
+            max-width: 600px;
+        }
+    </style>
 </head>
 
 <body>
 
-
     <!--  ======================= Start Header Area ============================== -->
 
     <header class="header_area">
-        <!-- Mensajes (De error y éxito) -->
-        <?php if (isset($_SESSION['completado'])) : ?>
-        <div class="alerta alerta-exito">
-            <?= $_SESSION['completado'] ?>
-        </div>
+        <!-- Alert Container -->
+        <div class="alert-container" id="alertContainer"></div>
 
-        <?php elseif (isset($_SESSION['errores']['general'])) : ?>
-        <div class="alerta alerta-error">
-            <?= $_SESSION['errores']['general'] ?>
-        </div>
-        <?php endif; ?>
-
-        <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'nombre') : ''; ?>
-        <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'correo') : ''; ?>
-        <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'mensaje') : ''; ?>
         <div class="main-menu">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#">ANDRES CASADIEGOS</a>
@@ -82,7 +107,6 @@
                         <li class="nav-item">
                             <a class="nav-link" id="btn-subscribe" href="#subscribe_area">Contact</a>
                         </li>
-
                     </ul>
                 </div>
             </nav>
@@ -93,7 +117,6 @@
 
     <!--  ======================= Start Main Area ================================ -->
     <main class="site-main">
-
 
         <!--  ======================= Start Banner Area =======================  -->
         <section class="site-banner">
@@ -106,7 +129,7 @@
                         <div class="site-buttons">
                             <div class="d-flex flex-row flex-wrap">
                                 <a href="https://www.github.com/acasadiegos" type="button" class="btn button primary-button mr-4 text-uppercase">GITHUB</a>
-                                <a href="descargar.php?archivo=DiplomasCertificados.pdf" type="button" class="btn button secondary-button text-uppercase mr-4">DEGREES / CERTIFICATES</a>
+                                <a href="./archivos/Andres_Casadiegos_Degree_And_Certificates.pdf" download type="button" class="btn button secondary-button text-uppercase mr-4">DEGREES / CERTIFICATES</a>
                             </div>
                         </div>
                     </div>
@@ -135,28 +158,20 @@
                         </h2>
                         <div class="paragraph py-4 w-75">
                             <p class="para">
-                            Systems engineering professional with 2 years of experience, graduated from the Autonomous University of
-                             Bucaramanga. With experience, knowledge and skills working under the agile Scrum 
-                             methodology in the area of web development (backend and frontend), databases, analysis 
-                             and requirements documentation.
-                            </p>
-                            <p class="para">
-                            I am a young man passionate about programming, responsible in the assigned tasks, with a competitive spirit 
-                            and continuous improvement, both personal and professional, looking for opportunities in which to develop all 
-                            my knowledge.
+                            .NET Full Stack Developer with over 4 years of experience in analysis, development, and
+                            maintenance of enterprise applications using C#, .NET Core, Angular, SQL Server,
+                            Oracle PL/SQL and SQL Server, within agile environments (Scrum).
+                            Passionate about clean code, process optimization, and implementation of scalable
+                            architectures such as Clean Architecture, Microservices, and DDD.
                             </p>
                         </div>
-                        <a href="descargar.php?archivo=cv.pdf" type="button" class="btn button primary-button text-uppercase">Download CV</a>
+                        <a href="./archivos/Andrés_Casadiegos_CV.pdf" download type="button" class="btn button primary-button text-uppercase">Download CV</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!--  ========================= End About Area ==========================  -->
-
-        <!--  ======================== Brand Area ==============================  -->
-
-        <!--  ======================== End Brand Area ==============================  -->
 
         <!--  ====================== Start Services Area =============================  -->
 
@@ -254,13 +269,13 @@
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="services">
                                 <div class="services-img text-center py-4">
-                                    <img src="./img/services/sass.png" alt="Services-3">
+                                    <img src="./img/services/Tailwind.png" alt="Services-3">
                                 </div>
                                 <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">SASS</h5>
+                                    <h5 class="card-title text-uppercase font-roboto">Tailwind</h5>
                                 </div>
                                 <p class="card-text text-secondary">
-                                    SASS.
+                                    Tailwind.
                                 </p>
                             </div>
                         </div>
@@ -306,39 +321,26 @@
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="services">
                                 <div class="services-img text-center py-4">
-                                    <img src="./img/services/php.png" alt="Services-4">
+                                    <img src="./img/services/Azure.png" alt="Services-4">
                                 </div>
                                 <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">PHP</h5>
+                                    <h5 class="card-title text-uppercase font-roboto">Azure</h5>
                                 </div>
                                 <p class="card-text text-secondary">
-                                    PHP programming language.
+                                    Cloud Development with Microsoft Azure.
                                 </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="services">
                                 <div class="services-img text-center py-4">
-                                    <img src="./img/services/laravel.png" alt="Services-4">
+                                    <img src="./img/services/Docker.png" alt="Services-4">
                                 </div>
                                 <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">Laravel</h5>
+                                    <h5 class="card-title text-uppercase font-roboto">Docker</h5>
                                 </div>
                                 <p class="card-text text-secondary">
-                                    Laravel framework for MVC web development.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="services-img text-center py-4">
-                                    <img src="./img/services/solid.png" alt="Services-4">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">SOLID</h5>
-                                </div>
-                                <p class="card-text text-secondary">
-                                    SOLID principles for clean code development and good practices.
+                                    Docker for creating, deploying, and running containerized apps.
                                 </p>
                             </div>
                         </div>
@@ -388,7 +390,7 @@
                                 </div>
                                 <div class="title py-4">
                                     <h4 class="text-uppercase">                                
-                                        <a href="https://transacciones.sodexhopass.com.co/CONDOR/Login.aspx?ReturnUrl=%2fcondor" target="_blank">
+                                        <a href="https://tarjetas.clientes.pluxee.co/Login.aspx" target="_blank">
                                             Billing Migration
                                         </a>
                                     </h4>
@@ -412,7 +414,7 @@
                                 </div>
                                 <div class="title py-4">
                                     <h4 class="text-uppercase">                                
-                                        <a href="https://transacciones.sodexhopass.com.co/CONDOR/Login.aspx?ReturnUrl=%2fcondor" target="_blank">
+                                        <a href="https://tarjetas.clientes.pluxee.co/Login.aspx" target="_blank">
                                             Virtual Card
                                         </a>
                                     </h4>
@@ -436,7 +438,7 @@
                                 </div>
                                 <div class="title py-4">
                                     <h4 class="text-uppercase">                                
-                                        <a href="https://transacciones.sodexhopass.com.co/CONDOR/Login.aspx?ReturnUrl=%2fcondor" target="_blank">
+                                        <a href="https://tarjetas.clientes.pluxee.co/Login.aspx" target="_blank">
                                             Maintenance
                                         </a>
                                     </h4>
@@ -460,7 +462,7 @@
                                 </div>
                                 <div class="title py-4">
                                     <h4 class="text-uppercase">                                
-                                        <a href="https://transacciones.sodexhopass.com.co/CONDOR/Login.aspx?ReturnUrl=%2fcondor" target="_blank">
+                                        <a href="https://tarjetas.clientes.pluxee.co/Login.aspx" target="_blank">
                                             Delivery Tracking - Request and Generation of electronic guides
                                         </a>
                                     </h4>
@@ -484,7 +486,7 @@
                                 </div>
                                 <div class="title py-4">
                                     <h4 class="text-uppercase">                                
-                                        <a href="https://transacciones.sodexhopass.com.co/CONDOR/Login.aspx?ReturnUrl=%2fcondor" target="_blank">
+                                        <a href="https://tarjetas.clientes.pluxee.co/Login.aspx" target="_blank">
                                             7Center - Implementation of multicontract option in state clients
                                         </a>
                                     </h4>
@@ -508,7 +510,7 @@
                                 </div>
                                 <div class="title py-4">
                                     <h4 class="text-uppercase">                                
-                                        <a href="https://transacciones.sodexhopass.com.co/CalculadoraNexoz/Front/userAuthentication" target="_blank">
+                                        <a href="https://terceros.clientes.pluxee.co/Front/userAuthentication" target="_blank">
                                             Nexoz - PSE Payment
                                         </a>
                                     </h4>
@@ -532,7 +534,7 @@
                                 </div>
                                 <div class="title py-4">
                                     <h4 class="text-uppercase">                                
-                                        <a href="https://transacciones.sodexhopass.com.co/CalculadoraNexoz/Front/userAuthentication" target="_blank">
+                                        <a href="https://terceros.clientes.pluxee.co/Front/userAuthentication" target="_blank">
                                             Nexoz - Database normalization
                                         </a>
                                     </h4>
@@ -557,7 +559,7 @@
                                 </div>
                                 <div class="title py-4">
                                     <h4 class="text-uppercase">                                
-                                        <a href="https://transacciones.sodexhopass.com.co/CalculadoraNexoz/Front/userAuthentication" target="_blank">
+                                        <a href="https://terceros.clientes.pluxee.co/Front/userAuthentication" target="_blank">
                                             Nexoz - Rebranding
                                         </a>
                                     </h4>
@@ -598,37 +600,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item personal">
-                            <div class="our-project">
-                                <div class="img">
-                                    <a class="test-popup-link" href="./img/portfolio/p1.jpg">
-                                        <img src="./img/portfolio/p1.jpg" alt="portfolio-1" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="title py-4">
-                                    <h4 class="text-uppercase">Videogames blog</h4>
-                                    <span class="text-secondary">Videogames blog that allows you to log in, register, 
-                                        create and view entries separated by categories.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item personal">
-                            <div class="our-project">
-                                <div class="img">
-                                    <a class="test-popup-link" href="./img/portfolio/p3.jpg">
-                                        <img src="./img/portfolio/p3.jpg" alt="portfolio-3" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="title py-4">
-                                    <h4 class="text-uppercase">Larafoto</h4>
-                                    <span class="text-secondary">Prototype of social image network (Instagram type). 
-                                        It allows you to log in, register, manage your own images and view those of other users. 
-                                        You can search for users and also comment on your own or third-party images.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item practicas-profesionales">
                             <div class="our-project">
                                 <div class="img">
@@ -648,13 +619,25 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-5 element-item personal">
                             <div class="our-project">
                                 <div class="img">
-                                    <a class="test-popup-link" href="./img/portfolio/p8.jpg">
-                                        <img src="./img/portfolio/p8.jpg" alt="portfolio-8" class="img-fluid">
+                                    <a class="test-popup-link" href="./img/portfolio/BudgetManagement.png">
+                                        <img src="./img/portfolio/BudgetManagement.png" alt="portfolio-1" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="title py-4">
-                                    <h4 class="text-uppercase">Portfolio v1</h4>
-                                    <span class="text-secondary">First version of my professional portfolio.</span>
+                                    <h4 class="text-uppercase">                                
+                                        <a href="https://budgetmanagement-ac1998.azurewebsites.net/" target="_blank">
+                                            Budget Management App
+                                        </a>
+                                    </h4>
+                                    <br/>
+                                    <span><b>Technologies: </b>C#, .NET 6.0 MVC, Javascript, Bootstrap, CSS, SqlServer, Dapper.</span>
+                                    <br/>
+                                    <br/>
+                                    <span class="text-secondary"><b>Description: </b>App where you can manage your finances. 
+                                        You can register your daily transactions, manage transaction categories, 
+                                        manage and register your account types, see your account balances, export to Excel 
+                                        your transactions report and see on calendar your transactions history.
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -719,16 +702,16 @@
                         <h4 class="text-uppercase">CONTACT ME</h4>
                     </div>
                 </div>
-                <form class="formulario" action="enviarMail.php" method="POST">
+                <form class="formulario" id="contactForm">
                     <div class="row">
                         <div class="col-sm-12 col-lg-6 mb-5 input-textbox">
                             <div class="d-flex justify-content-center">
-                                <input type="text" id="txtemail" name="correo" class="form-control" placeholder="Email" required minlength="3" maxlength="50">
+                                <input type="email" id="txtemail" name="correo" class="form-control" placeholder="Email" required minlength="3" maxlength="50">
                             </div>
                         </div>
                         <div class="col-sm-12 col-lg-6 mb-5 input-textbox">
                             <div class="d-flex justify-content-center">
-                                <input type="text" id="txtnombre" name="nombre" class="form-control" placeholder="Name" required minlength="3" maxlength="50" pattern="[A-Za-z]+">
+                                <input type="text" id="txtnombre" name="nombre" class="form-control" placeholder="Name" required minlength="3" maxlength="50" pattern="[A-Za-z\s]+">
                             </div>
                         </div>
                         <div class="col-sm-12 mb-5 input-textbox">
@@ -745,7 +728,6 @@
         </section>
         <!--  ========================== End Subscribe me Area ============================  -->
 
-
     </main>
     <!--  ======================= End Main Area ================================ -->
 
@@ -759,8 +741,7 @@
             </div>
         </div>
     </footer>
-    <?php borrarErrores(); ?>
-    
+
     <!--  Jquery js file  -->
     <script src="./js/jquery.3.4.1.js"></script>
 
@@ -781,8 +762,107 @@
 
     <!-- custom js animations file-->
     <script src="./js/efectos.js"></script>
-    
 
+    <!-- Contact Form Handler -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your public key
+        // You need to sign up at https://www.emailjs.com/ and get your keys
+        // Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
+        
+        (function() {
+            // emailjs.init('YOUR_PUBLIC_KEY'); // Uncomment and add your key
+        })();
+
+        // Alert functions
+        function showAlert(message, type) {
+            const alertContainer = document.getElementById('alertContainer');
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `alerta alerta-${type}`;
+            alertDiv.textContent = message;
+            
+            alertContainer.innerHTML = '';
+            alertContainer.appendChild(alertDiv);
+            
+            // Auto-hide after 5 seconds
+            setTimeout(() => {
+                alertDiv.style.opacity = '0';
+                setTimeout(() => {
+                    alertDiv.remove();
+                }, 500);
+            }, 5000);
+        }
+
+        // Form validation
+        function validateForm(nombre, correo, mensaje) {
+            const errors = {};
+
+            // Validate name
+            if (!nombre || nombre.length < 3 || nombre.length > 50 || /[0-9]/.test(nombre)) {
+                errors.nombre = 'The name is not valid';
+            }
+
+            // Validate email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!correo || correo.length < 3 || correo.length > 50 || !emailRegex.test(correo)) {
+                errors.correo = 'The email is not valid';
+            }
+
+            // Validate message
+            if (!mensaje || mensaje.trim().length === 0) {
+                errors.mensaje = 'The message is not valid';
+            }
+
+            return errors;
+        }
+
+        // Handle form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nombre = document.getElementById('txtnombre').value;
+            const correo = document.getElementById('txtemail').value;
+            const mensaje = document.getElementById('txtmensaje').value;
+
+            // Validate form
+            const errors = validateForm(nombre, correo, mensaje);
+
+            if (Object.keys(errors).length > 0) {
+                // Show first error
+                const firstError = Object.values(errors)[0];
+                showAlert(firstError, 'error');
+                return;
+            }
+
+            // Option 1: Using EmailJS (Recommended - Free tier available)
+            // Uncomment this section and configure EmailJS
+            /*
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+                from_name: nombre,
+                from_email: correo,
+                message: mensaje,
+                to_email: 'acasadiego199827@gmail.com'
+            }).then(function(response) {
+                showAlert('Email sent successfully', 'exito');
+                document.getElementById('contactForm').reset();
+            }, function(error) {
+                showAlert('An error occurred while sending the email', 'error');
+            });
+            */
+
+            // Option 2: Using mailto (Simple but less reliable)
+            // This will open the user's email client
+            const mailtoLink = `mailto:acasadiego199827@gmail.com?subject=Message from ${encodeURIComponent(nombre)}&body=${encodeURIComponent(mensaje)}%0D%0A%0D%0AFrom: ${encodeURIComponent(correo)}`;
+            
+            showAlert('Opening your email client...', 'exito');
+            window.location.href = mailtoLink;
+            
+            // Clear form
+            setTimeout(() => {
+                document.getElementById('contactForm').reset();
+            }, 1000);
+        });
+    </script>
 
 </body>
 
